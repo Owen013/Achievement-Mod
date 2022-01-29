@@ -1,11 +1,11 @@
 ﻿using OWML.ModHelper;
 using OWML.Common;
 
-namespace AchievementsMod
+namespace AchievementMod
 {
-    public class AchievementsMod : ModBehaviour
+    public class AchievementMod : ModBehaviour
     {
-        public static AchievementsMod Instance;
+        public static AchievementMod Instance;
 
         private void Awake()
         {
@@ -19,7 +19,7 @@ namespace AchievementsMod
                 ("Earn",
                 typeof(Patches),
                 nameof(Patches.AchievementEarned));
-            ModHelper.Console.WriteLine($"{nameof(AchievementsMod)} is ready to go!", MessageType.Success);
+            ModHelper.Console.WriteLine($"{nameof(AchievementMod)} is ready to go!", MessageType.Success);
         }
     }
 
@@ -93,15 +93,15 @@ namespace AchievementsMod
             else if (type == Achievements.Type.FOUND_SIGNAL)
             {
                 name = "_";
-                AchievementsMod.Instance.ModHelper.Console.WriteLine($"FOUND_SIGNAL");
+                AchievementMod.Instance.ModHelper.Console.WriteLine($"FOUND_SIGNAL");
             }
             else if (type == Achievements.Type.TOTAL)
             {
                 name = "_";
-                AchievementsMod.Instance.ModHelper.Console.WriteLine($"TOTAL");
+                AchievementMod.Instance.ModHelper.Console.WriteLine($"TOTAL");
             }
             if (name == "_") return;
-            AchievementsMod.Instance.ModHelper.Console.WriteLine($"Achievement \"{name}\" earned!", MessageType.Success);
+            AchievementMod.Instance.ModHelper.Console.WriteLine($"Achievement \"{name}\" earned!", MessageType.Success);
         }
     }
 }

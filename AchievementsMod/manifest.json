@@ -1,8 +1,8 @@
 {
-  "filename": "AchievementsMod.dll",
+  "filename": "AchievementMod.dll",
   "author": "Owen_013",
-  "name": "Achievements Mod",
-  "uniqueName": "Owen013.AchievementsMod",
+  "name": "Achievement Mod",
+  "uniqueName": "Owen013.AchievementMod",
   "version": "0.0.1",
   "owmlVersion": "2.3.1"
 }
